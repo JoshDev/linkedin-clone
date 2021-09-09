@@ -8,12 +8,13 @@ import "./Feed.css";
 import InputOption from "./InputOption";
 import Post from "./Post";
 import { db } from './firebase';
+import { collection, onSnapshot } from "firebase/firestore";
 
 function Feed() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    db.collection("posts").onSnapshot(snapshot => {
+    onSnapshot(collection(db, "posts"), snapshot => {
       setPosts(snapshot.docs.map((doc) => {
         return {
           id: doc.id, data: doc.data()
