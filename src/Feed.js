@@ -31,7 +31,7 @@ function Feed() {
         </div>
       </div>
       {/* Posts */}
-      <Post name="Josh Dev" description="This is a test" />
+      <Post name="Josh Dev" description="This is a test" message="This worked" />
     </div>
   );
 }
