@@ -3,7 +3,7 @@ import ImageIcon from "@material-ui/icons/Image";
 import SubscriptionsIcon from "@material-ui/icons/Subscriptions";
 import CalendarViewDayIcon from "@material-ui/icons/CalendarViewDay";
 import EventNoteIcon from "@material-ui/icons/EventNote";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Feed.css";
 import InputOption from "./InputOption";
 import Post from "./Post";
